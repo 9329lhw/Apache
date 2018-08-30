@@ -1,4 +1,4 @@
-<h1 align="center">《温故知新PHP》1.0</h1>
+<h1 align="center">《Apache安装与使用》1.0</h1>
 
 <p align="center">
 <a href="https://github.com/TIGERB/easy-tips#目录">
