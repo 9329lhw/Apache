@@ -21,7 +21,6 @@
 					Require local
 				</Directory>
 			</VirtualHost>
-
 		   	<VirtualHost *:80>
 				DocumentRoot "E:\shop-pc"
 				ServerName www.test.shop.com
@@ -33,7 +32,6 @@
     				AllowOverride none
     				Require all denied
 			</Directory>
-			
 		   	<Directory "D:/xampp/cgi-bin">
     				AllowOverride All
     				Options None
