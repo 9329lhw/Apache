@@ -10,37 +10,38 @@
 - 基本配置
 	- D:\xampp\apache\conf\extra\httpd-vhosts.conf
 	
-			<VirtualHost *:80>
-   				DocumentRoot "F:/rosewholesale-m/htdocs"
-    				ServerName m.rosewholesale.m.s1.egomsl.com
-    				ServerAlias *.rosewholesale.m.s1.egomsl.com
-				SetEnv ENV dev
-				<Directory  "F:/rosewholesale-m/htdocs">
-					Options Indexes FollowSymLinks MultiViews
-					AllowOverride All
-					Require local
-				</Directory>
-			</VirtualHost>
-		   	<VirtualHost *:80>
-				DocumentRoot "E:\shop-pc"
-				ServerName www.test.shop.com
-			</VirtualHost>
+		<VirtualHost *:80>
+   			DocumentRoot "F:/rosewholesale-m/htdocs"
+    			ServerName m.rosewholesale.m.s1.egomsl.com
+    			ServerAlias *.rosewholesale.m.s1.egomsl.com
+			SetEnv ENV dev
+			<Directory  "F:/rosewholesale-m/htdocs">
+				Options Indexes FollowSymLinks MultiViews
+				AllowOverride All
+				Require local
+			</Directory>
+		</VirtualHost>
+		
+		<VirtualHost *:80>
+			DocumentRoot "E:\shop-pc"
+			ServerName www.test.shop.com
+		</VirtualHost>
 
 	- D:\xampp\apache\conf\httpd.conf
 			
-			<Directory />
-    				AllowOverride none
-    				Require all denied
-			</Directory>
-		   	<Directory "D:/xampp/cgi-bin">
-    				AllowOverride All
-    				Options None
-    				Require all granted
-			</Directory>
+		<Directory />
+    			AllowOverride none
+    			Require all denied
+		</Directory>
+		<Directory "D:/xampp/cgi-bin">
+    			AllowOverride All
+    			Options None
+    			Require all granted
+		</Directory>
 
 	- C:\Windows\System32\drivers\etc\hosts
 
-		   	127.0.0.1       www.test.shop.com
+		127.0.0.1       www.test.shop.com
 
 - 常见的错误（后续慢慢补充）
 
