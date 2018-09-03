@@ -11,7 +11,7 @@
 	- D:\xampp\apache\conf\extra\httpd-vhosts.conf
 	
 			<VirtualHost *:80>
-   				 DocumentRoot "F:/rosewholesale-m/htdocs"
+   				DocumentRoot "F:/rosewholesale-m/htdocs"
     				ServerName m.rosewholesale.m.s1.egomsl.com
     				ServerAlias *.rosewholesale.m.s1.egomsl.com
 				SetEnv ENV dev
